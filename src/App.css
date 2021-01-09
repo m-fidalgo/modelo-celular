@@ -1,0 +1,8 @@
+.container {
+  padding-left: 100px;
+}
+
+.container-cellphone {
+  transform: rotate(-20deg);
+  margin-right: 100px;
+}

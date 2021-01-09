@@ -1,0 +1,249 @@
+:root {
+  --size-divisor: 4;
+}
+
+.marvel-device {
+  display: inline-block;
+  position: relative;
+  box-sizing: content-box !important;
+}
+
+.marvel-device .screen {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  z-index: 3;
+  background: white;
+  object-fit: cover;
+  display: block;
+  border-radius: calc(1px / var(--size-divisor));
+  box-shadow: 0 0 0 calc(3px / var(--size-divisor)) #111;
+}
+.marvel-device .top-bar,
+.marvel-device .bottom-bar {
+  height: calc(3px / var(--size-divisor));
+  background: black;
+  width: 100%;
+  display: block;
+}
+.marvel-device .middle-bar {
+  width: calc(3px / var(--size-divisor));
+  height: calc(4px / var(--size-divisor));
+  top: calc(0px / var(--size-divisor));
+  left: calc(90px / var(--size-divisor));
+  background: black;
+  position: absolute;
+}
+
+.marvel-device.iphone8plus {
+  width: calc(414px / var(--size-divisor));
+  height: calc(736px / var(--size-divisor));
+  padding: calc(112px / var(--size-divisor)) calc(26px / var(--size-divisor));
+  background: #d9dbdc;
+  border-radius: calc(56px / var(--size-divisor));
+  box-shadow: inset 0 0 calc(3px / var(--size-divisor)) 0 rgba(0, 0, 0, 0.2);
+}
+.marvel-device.iphone8plus:before {
+  width: calc(100% - calc(12px) / var(--size-divisor));
+  height: calc(100% - calc(12px) / var(--size-divisor));
+  position: absolute;
+  top: calc(6px / var(--size-divisor));
+  content: "";
+  left: calc(6px / var(--size-divisor));
+  border-radius: calc(50px / var(--size-divisor));
+  background: #f8f8f8;
+  z-index: 1;
+}
+.marvel-device.iphone8plus:after {
+  width: calc(100% - calc(16px) / var(--size-divisor));
+  height: calc(100% - calc(16px) / var(--size-divisor));
+  position: absolute;
+  top: calc(8px / var(--size-divisor));
+  content: "";
+  left: calc(8px / var(--size-divisor));
+  border-radius: calc(48px / var(--size-divisor));
+  box-shadow: inset 0 0 calc(3px / var(--size-divisor)) 0 rgba(0, 0, 0, 0.1),
+    inset 0 0 calc(6px / var(--size-divisor)) calc(3px / var(--size-divisor))
+      #ffffff;
+  z-index: 2;
+}
+.marvel-device.iphone8plus .home {
+  border-radius: 100%;
+  width: calc(68px / var(--size-divisor));
+  height: calc(68px / var(--size-divisor));
+  position: absolute;
+  left: 50%;
+  margin-left: calc(-34px / var(--size-divisor));
+  bottom: calc(24px / var(--size-divisor));
+  z-index: 3;
+  background: #303233;
+  background: linear-gradient(
+    135deg,
+    #303233 0%,
+    #b5b7b9 50%,
+    #f0f2f2 69%,
+    #303233 100%
+  );
+}
+.marvel-device.iphone8plus .home:before {
+  background: #f8f8f8;
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  width: calc(100% - calc(8px) / var(--size-divisor));
+  height: calc(100% - calc(8px) / var(--size-divisor));
+  top: calc(4px / var(--size-divisor));
+  left: calc(4px / var(--size-divisor));
+}
+.marvel-device.iphone8plus .top-bar {
+  height: calc(14px / var(--size-divisor));
+  background: #bfbfc0;
+  position: absolute;
+  top: calc(68px / var(--size-divisor));
+  left: 0;
+}
+.marvel-device.iphone8plus .bottom-bar {
+  height: calc(14px / var(--size-divisor));
+  background: #bfbfc0;
+  position: absolute;
+  bottom: calc(68px / var(--size-divisor));
+  left: 0;
+}
+.marvel-device.iphone8plus .sleep {
+  position: absolute;
+  top: calc(190px / var(--size-divisor));
+  right: calc(-4px / var(--size-divisor));
+  width: calc(4px / var(--size-divisor));
+  height: calc(66px / var(--size-divisor));
+  border-radius: calc(0px / var(--size-divisor)) calc(2px / var(--size-divisor))
+    calc(2px / var(--size-divisor)) calc(0px / var(--size-divisor));
+  background: #d9dbdc;
+}
+.marvel-device.iphone8plus .volume {
+  position: absolute;
+  left: calc(-4px / var(--size-divisor));
+  top: calc(188px / var(--size-divisor));
+  z-index: 0;
+  height: calc(66px / var(--size-divisor));
+  width: calc(4px / var(--size-divisor));
+  border-radius: calc(2px / var(--size-divisor)) calc(0px / var(--size-divisor))
+    calc(0px / var(--size-divisor)) calc(2px / var(--size-divisor));
+  background: #d9dbdc;
+}
+.marvel-device.iphone8plus .volume:before {
+  position: absolute;
+  left: calc(2px / var(--size-divisor));
+  top: calc(-78px / var(--size-divisor));
+  height: calc(40px / var(--size-divisor));
+  width: calc(2px / var(--size-divisor));
+  border-radius: calc(2px / var(--size-divisor)) calc(0px / var(--size-divisor))
+    calc(0px / var(--size-divisor)) calc(2px / var(--size-divisor));
+  background: inherit;
+  content: "";
+  display: block;
+}
+.marvel-device.iphone8plus .volume:after {
+  position: absolute;
+  left: calc(0px / var(--size-divisor));
+  top: calc(82px / var(--size-divisor));
+  height: calc(66px / var(--size-divisor));
+  width: calc(4px / var(--size-divisor));
+  border-radius: calc(2px / var(--size-divisor)) calc(0px / var(--size-divisor))
+    calc(0px / var(--size-divisor)) calc(2px / var(--size-divisor));
+  background: inherit;
+  content: "";
+  display: block;
+}
+.marvel-device.iphone8plus .camera {
+  background: #3c3d3d;
+  width: calc(12px / var(--size-divisor));
+  height: calc(12px / var(--size-divisor));
+  position: absolute;
+  top: calc(29px / var(--size-divisor));
+  left: 50%;
+  margin-left: calc(-6px / var(--size-divisor));
+  border-radius: 100%;
+  z-index: 3;
+}
+.marvel-device.iphone8plus .sensor {
+  background: #3c3d3d;
+  width: calc(16px / var(--size-divisor));
+  height: calc(16px / var(--size-divisor));
+  position: absolute;
+  top: calc(54px / var(--size-divisor));
+  left: calc(154px / var(--size-divisor));
+  z-index: 3;
+  border-radius: 100%;
+}
+.marvel-device.iphone8plus .speaker {
+  background: #292728;
+  width: calc(70px / var(--size-divisor));
+  height: calc(6px / var(--size-divisor));
+  position: absolute;
+  top: calc(59px / var(--size-divisor));
+  left: 50%;
+  margin-left: calc(-35px / var(--size-divisor));
+  border-radius: calc(6px / var(--size-divisor));
+  z-index: 3;
+}
+.marvel-device.iphone8plus.black {
+  background: #464646;
+  box-shadow: inset 0 0 calc(3px / var(--size-divisor)) 0 rgba(0, 0, 0, 0.7);
+}
+.marvel-device.iphone8plus.black:before {
+  background: #080808;
+}
+.marvel-device.iphone8plus.black:after {
+  box-shadow: inset 0 0 calc(3px / var(--size-divisor)) 0 rgba(0, 0, 0, 0.1),
+    inset 0 0 calc(6px / var(--size-divisor)) calc(3px / var(--size-divisor))
+      #212121;
+}
+.marvel-device.iphone8plus.black .top-bar,
+.marvel-device.iphone8plus.black .bottom-bar {
+  background: #212121;
+}
+.marvel-device.iphone8plus.black .volume,
+.marvel-device.iphone8plus.black .sleep {
+  background: #464646;
+}
+.marvel-device.iphone8plus.black .camera {
+  background: #080808;
+}
+.marvel-device.iphone8plus.black .home {
+  background: #080808;
+  background: linear-gradient(135deg, #080808 0%, #464646 50%, #080808 100%);
+}
+.marvel-device.iphone8plus.black .home:before {
+  background: #080808;
+}
+
+@media (min-width: 480px) {
+  :root {
+    --size-divisor: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --size-divisor: 3;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --size-divisor: 2.7;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --size-divisor: 2;
+  }
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --size-divisor: 1.8;
+  }
+}
+/*# sourceMappingURL=devices.css.map */
